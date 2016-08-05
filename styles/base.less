@@ -1,0 +1,136 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #333435;
+}
+
+.source {
+}
+
+.comment {
+  font-style: italic;
+  color: #747676;
+}
+
+.keyword, .storage {
+  color: #E9EEC2;
+}
+
+.entity.name.function, .keyword.other.name-of-parameter.objc {
+  color: #D5584B;
+}
+
+.entity.name {
+  color: #FFFFFF;
+}
+
+.constant.numeric {
+  color: #FDA35E;
+}
+
+.variable.language, .variable.other {
+  color: #7AB8D7;
+}
+
+.constant {
+  color: #7AB8D7;
+}
+
+.variable.other.constant {
+  color: #FFA35E;
+}
+
+.constant.language {
+  color: #6E9CBE;
+}
+
+.string {
+  color: #7AB8D7;
+}
+
+.support.function {
+  color: #D4584B;
+}
+
+.support.type {
+  color: #6E9CBE;
+}
+
+.support.constant {
+  color: #FDA35E;
+}
+
+.meta.tag, .declaration.tag, .entity.name.tag, .entity.other.attribute-name {
+  color: #E87658;
+}
+
+.invalid {
+  color: #FFFFFF;
+  background-color: #990000;
+}
+
+.constant.character.escaped, .constant.character.escape, .string .source, .string .source.ruby {
+  color: #FDA35E;
+}
+
+.markup.inserted {
+  color: #E6E1DC;
+  background-color: #2F7248;
+}
+
+.markup.deleted {
+  color: #E6E1DC;
+  background-color: #983C2C;
+}
+
+.meta.diff.header, .meta.separator.diff, .meta.diff.index, .meta.diff.range {
+  background-color: #3970AB;
+}
